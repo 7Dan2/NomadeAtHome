@@ -1,0 +1,185 @@
+*
+{
+    box-sizing: border-box;
+}
+
+.header_container
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: 1fr; */
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
+    grid-gap: 5px;
+    grid-auto-rows: minmax(90px, auto);
+    padding-bottom: 5px;
+}
+
+.mainMap_container
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    grid-auto-rows: minmax(90px, auto);
+}
+/* Au survol de la barre, on modifie la grille pour passer de 1fr à 4fr
+pour laisser la place au trois autres menus (voir dans showMeMenu.js)
+ */
+/* .header_container:hover
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+} */
+
+.header
+{
+    background-color: brown;
+    font-size: 3em;
+    padding: 10px 20px;
+    color: white;
+}
+
+.actionChoice
+{
+    font-size: 2em;
+    padding: 25px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+p
+{
+    border-radius: 9px;
+    border: 2px solid yellow;
+}
+
+/* a:hover, a:active
+{
+    background-color: rgb(255, 255, 0);
+} */
+
+/* Barre verticale de boutons  se superposant à la carte */
+.verticalButtonsBar
+{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    z-index: 1000;
+}
+
+.myMap
+{
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    height: 190%;
+    border-radius: 9px;
+    max-width: 100%;
+}
+
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 100px;
+}
+  
+li a 
+{
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    padding: 10px;
+    margin: 0px 0px 20px;
+    border-radius: 50%;
+}
+
+/* .actionChoice
+{
+    padding: O;
+    margin: 0;
+} */
+
+#myInfo
+{
+    background-color: red;
+    width: 25%;
+    color: white;
+}
+
+.actionChoice > a
+{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+/* Barre horizontale */
+/* Première brique constituant la barre */
+#home
+{
+    background-color: rgba(104, 104, 75, 0.6);
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+/* Au survol on supprime l'effet de transparence, retrecicement de la brique, on affiche un curseur pointeur */
+#home:hover, #home:active
+{
+    cursor: pointer;
+    background-color: rgb(104, 104, 75);
+    border: 2px solid red;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+/* Deuxième brique constituant la barre */
+#findAHost
+{
+    background-color: rgba(121, 121, 252, 0.6);
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* Au survol on supprime l'effet de transparence, et on affiche un curseur pointeur */
+#findAHost:hover, #findAHost:active
+{
+    cursor: pointer;
+    background-color: rgb(121, 121, 252);
+    border: 2px solid red;
+   
+}
+
+/* Troisième brique constituant la barre */
+#autreTruc__1
+{
+    background-color: rgb(252, 169, 121, 0.6);
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+/* Au survol on supprime l'effet de transparence, et on affiche un curseur pointeur */
+#autreTruc__1:hover, #autreTruc__1:active
+{
+    cursor: pointer;
+    background-color: rgb(252, 169, 121);
+    border: 2px solid red;
+}
+
+/* Quatrième brique constituant la barre */
+#autreTruc__2
+{
+    background-color: rgb(162, 252, 121, 0.6);
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+/* Au survol on supprime l'effet de transparence, et on affiche un curseur pointeur */
+#autreTruc__2:hover, #autreTruc__2:active
+{
+    cursor: pointer;
+    background-color: rgb(162, 252, 121);
+    border: 2px solid red;
+}

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Nomade@home</title>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="description" content="Find a host who share its backyard">
+    <meta name="keywords" content="">
+    <meta name="author" content="{GreenDev}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- <link rel = " sophia " href = "./sophia.manifest"> -->
+
+    <!-- <link rel="icon" type="image/png" sizes="96x96" href="./Assets/Icons/favicon.png"> -->
+
+    <link rel="stylesheet" type="text/css" href="./CSS/main.css">
+
+    <!-- LEAFLET -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+    <!-- <link rel="stylesheet" href="./leaflet/leaflet.css" /> -->
+
+    <!-- <link rel="stylesheet" type="text/css" href="./modal.css"> -->
+
+    <!-- MAPBOX GL (directions)-->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body>
+
+    <!-- <div class="header_container">
+        
+        
+        
+            <div id="home" class="actionChoice" onclick="showMeMenu()"><p><a href="#">Nomade@home</a></p></div>
+            <div id="findAHost" class="actionChoice sub" style="display:none;"><a href="#">Trouver un @Home</a></div>
+            <div id="autreTruc__1" class="actionChoice sub" style="display:none;"><a href="#">Autre truc</a></div>
+            <div id="autreTruc__2" class="actionChoice sub" style="display:none;"><a href="#">Autre truc</a></div>
+        
+    </div> -->
+
+    <div class="mainMap_container">
+
+        <div class="verticalButtonsBar">
+
+            <ul>
+                <li><a id="home" class="actionChoice" href="#home">@</a></li>
+                <li><a id="findAHost" class="actionChoice" href="#findAHome">@</a></li>
+                <li><a id="autreTruc__1" class="actionChoice" href="#stuffOne">#</a></li>
+                <li><a id="autreTruc__2" class="actionChoice" href="#stuffTwo">#</a></li>
+            </ul>
+
+        </div>
+
+        
+        
+        <!-- <div>
+            <p id="myInfo">Informations</p>
+        </div> -->
+    
+        <div class="myMap" id="myMap">
+
+        </div>
+
+    </div>
+
+        
+    <!-- <script src="./leaflet/leaflet.js"></script> -->
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="./JS/servicesAreasEureEtLoir-geojson.js"></script>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+ integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+ crossorigin="">
+    </script>
+
+    <!-- MAPBOX GL (directions) -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+
+
+    <script src="./JS/showMap.js"></script>
+    <script src="JS/showMeMenu.js"></script>
+    
+</body>
+
+</html>
